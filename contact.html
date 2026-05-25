@@ -61,36 +61,35 @@
 
     <h3>Send Inquiry</h3>
 
-    <form action="https://formsubmit.co/clusterservicesadmin@gmail.com"
-          method="POST">
+    <form action="https://api.web3forms.com/submit" method="POST">
 
-        <input type="hidden" name="_captcha" value="false">
+    <input type="hidden"
+           name="access_key"
+           value="e27f620f-2a7d-445e-8147-95d2863777f8">
 
-        <input type="hidden" name="_next"
-               value="https://YOUR_USERNAME.github.io/cluster-services/thankyou.html">
+    <input type="text"
+           name="name"
+           placeholder="Your Name"
+           required>
 
-        <input type="text"
-               name="name"
-               placeholder="Your Name"
-               required>
+    <input type="email"
+           name="email"
+           placeholder="Your Email"
+           required>
 
-        <input type="email"
-               name="email"
-               placeholder="Your Email"
-               required>
+    <input type="text"
+           name="phone"
+           placeholder="Phone Number">
 
-        <input type="text"
-               name="phone"
-               placeholder="Phone Number">
+    <textarea name="message"
+              placeholder="Your Requirement"
+              required></textarea>
 
-        <textarea name="message"
-                  placeholder="Your Requirement"
-                  required></textarea>
+    <button type="submit">
+        Send Inquiry
+    </button>
 
-        <button type="submit">Send Inquiry</button>
-
-    </form>
-
+</form>
 </section>
 
 <footer>
