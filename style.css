@@ -179,3 +179,8 @@ footer{
     color:#01386a;
     margin-bottom:15px;
 }
+#result-message{
+    margin-top:20px;
+    font-weight:bold;
+    font-size:18px;
+}
