@@ -1,8 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Contact Us - Cluster Services</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Cluster Services | Industrial Automation Solutions</title>
+
+    <meta name="description"
+        content="Contact Cluster Services for industrial automation solutions, PLC programming, SCADA integration, process automation, commissioning and engineering support.">
+
+    <meta name="robots" content="index,follow">
+
+    <link rel="canonical" href="https://clusterservices.space/contact.html">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -10,7 +21,7 @@
 
 <header>
 
-    <img src="logo.jpg" class="logo">
+    <img src="logo.jpg" class="logo" alt="Cluster Services logo">
 
     <h1>Cluster Services</h1>
 
@@ -25,14 +36,11 @@
 
 <section class="contact-section">
 
-    <h2>
-        Consult Cluster Services for Industrial Automation Solutions
-    </h2>
+    <h2>Consult Cluster Services for Industrial Automation Solutions</h2>
 
     <p>
-        Your success is our priority, and we invite you to get in touch
-        with our team of experts who are ready to collaborate,
-        strategize and implement customized automation solutions.
+        Get in touch with our team for customized industrial automation,
+        PLC, SCADA, instrumentation and engineering solutions.
     </p>
 
     <div class="address-box">
@@ -43,9 +51,8 @@
             Office No 205, Mayur Trade Centre Phase II,
             Chinchwad, Pune - 411019
         </p>
-         <p>
-            Email - info@clusterservices.space
-        </p>
+
+        <p>Email: info@clusterservices.space</p>
 
     </div>
 
@@ -59,9 +66,8 @@
             Nashik Road,
             Nashik - 422214
         </p>
-         <p>
-            Email - info@clusterservices.space
-        </p>
+
+        <p>Email: info@clusterservices.space</p>
 
     </div>
 
@@ -69,23 +75,13 @@
 
     <form id="contact-form">
 
-        <input type="text"
-               name="name"
-               placeholder="Your Name"
-               required>
+        <input type="text" name="name" placeholder="Your Name" required>
 
-        <input type="email"
-               name="email"
-               placeholder="Your Email"
-               required>
+        <input type="email" name="email" placeholder="Your Email" required>
 
-        <textarea name="message"
-                  placeholder="Your Requirement"
-                  required></textarea>
+        <textarea name="message" placeholder="Your Requirement" required></textarea>
 
-        <button type="submit">
-            Send Inquiry
-        </button>
+        <button type="submit">Send Inquiry</button>
 
     </form>
 
@@ -94,7 +90,6 @@
 </section>
 
 <script>
-
 const form = document.getElementById("contact-form");
 const resultMessage = document.getElementById("result-message");
 
@@ -118,40 +113,24 @@ form.addEventListener("submit", async function(e) {
         const result = await response.json();
 
         if(result.success) {
-
-            resultMessage.innerHTML =
-                "Inquiry Sent Successfully.";
-
+            resultMessage.innerHTML = "Inquiry Sent Successfully.";
             resultMessage.style.color = "green";
-
             form.reset();
-
         } else {
-
-            resultMessage.innerHTML =
-                "Failed to send inquiry.";
-
+            resultMessage.innerHTML = "Failed to send inquiry.";
             resultMessage.style.color = "red";
-
-            form.reset();
         }
 
     } catch(error) {
-
-        resultMessage.innerHTML =
-            "Network Error. Please try again.";
-
+        resultMessage.innerHTML = "Network Error. Please try again.";
         resultMessage.style.color = "red";
-
-        form.reset();
     }
 
 });
-
 </script>
 
 <footer>
-    <p>© 2020 Cluster Services</p>
+    <p>© 2020 Cluster Services | Industrial Automation Solutions</p>
 </footer>
 
 </body>
